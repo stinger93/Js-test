@@ -1,3 +1,5 @@
-let text;
-text = "hello, world!";
-alert(text);
+function text(){
+    alert("hello!")
+
+}
+text()

@@ -1,5 +1,8 @@
-function text(){
-    alert("hello!")
+let thingToPrint = ''
 
+function drawText(){
+    thingToPrint += "#";
+    document.writeln(thingToPrint)
 }
-text()
+  let intervalID =  setInterval(drawText, 200)
+    clearInterval(intervalID)

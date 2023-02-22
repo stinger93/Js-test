@@ -1,3 +1,4 @@
+//Тест замыкания функций в java script
 function stopWatch(){
     let startTime = Date.now()
 

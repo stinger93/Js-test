@@ -1,8 +1,19 @@
-let thingToPrint = ''
+function stopWatch(){
+    let startTime = Date.now()
 
-function drawText(){
-    thingToPrint += "#";
-    document.writeln(thingToPrint)
+    function getDelay(){
+        let elapsedTime = Date.now() - startTime;
+        alert(elapsedTime);
+    }
+    return  getDelay;
 }
-  let intervalID =  setInterval(drawText, 200)
-    clearInterval(intervalID)
+
+let timer = stopWatch()
+
+//Что-нибудь за n-время.
+for (let  i = 0; i < 100000; i++){
+    let foo = Math.random()*10000
+}
+
+// вызов возвращаемой функции
+timer()

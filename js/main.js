@@ -1,20 +1,15 @@
-//Тест замыкания функций в java script
-function stopWatch(){
-    let startTime = Date.now()
-
-    function getDelay(){
-        let elapsedTime = Date.now() - startTime;
-        alert(elapsedTime);
-    }
-    return  getDelay;
+function sum (a, b){
+    return a + b;
 }
 
-let timer = stopWatch()
-
-//Что-нибудь за n-время.
-for (let  i = 0; i < 100000; i++){
-    let foo = Math.random()*10000
+function sub(a,b){
+    return a - b;
 }
 
-// вызов возвращаемой функции
-timer()
+function multiply(a,b){
+    return a * b;
+}
+
+function divison(a , b){
+    return a / b;
+}
